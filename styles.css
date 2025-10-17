@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: pink;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: yellow;
+    font-size: 30px;
+}
+
+li:active {
+    background-color: lightgreen;
+}
+
+li::before {
+    content: "☑️";
+    margin-right: 4px;
+}
+
+li:hover::after {
+    content: "Pick me!!!";
+    margin-left: 4px;
+    font-style: italic;
+}
+
+li:active::before {
+    content: "✅";
+}
+
+li:active::after {
+    content: "Yay!!!";
+}

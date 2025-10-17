@@ -13,3 +13,29 @@
 
 /* Add your CSS styles below this line */
 
+a {
+    background-color: coral;
+    color:white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    
+}
+
+.card::before {
+    content: "SALE";
+    background-color: red;
+    font-size: 15px;
+    color: white;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+p:hover::after {
+    content: "now 29$";
+    color: red;
+}
+
